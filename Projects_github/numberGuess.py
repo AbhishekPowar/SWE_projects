@@ -12,13 +12,14 @@ while no_of_guess < tries_allowed:
     no_of_guess += 1
     print(f'\nAttempt {no_of_guess} :')
     user_guess = int(input('Take a guess:'))
-    if user_guess == comp_guess:
+    if user_guess < comp_guess:
+        print('Guess higher number')
+    elif user_guess > comp_guess:
+        print('Guess lower number')
+    else :
         print(f'Congrtulations you got number right in {no_of_guess} attempts')
         break
-    elif user_guess < comp_guess:
-        print('Guess higher number')
-    else:
-        print('Guess lower number')
+    
 else:
     print(f'You lose, you took {no_of_guess} attempts')
 
