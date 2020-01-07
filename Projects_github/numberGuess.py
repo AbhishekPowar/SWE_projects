@@ -16,7 +16,7 @@ while no_of_guess < tries_allowed:
         print('Guess higher number')
     elif user_guess > comp_guess:
         print('Guess lower number')
-    else :
+    else:
         print(f'Congrtulations you got number right in {no_of_guess} attempts')
         break
     
