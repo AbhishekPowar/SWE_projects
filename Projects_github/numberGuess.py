@@ -2,10 +2,13 @@ from random import randint
 mode =  {1 : 20, 2 : 15, 3: 10}
 
 print("Let's start\n I am choosing a number between 1 and 100")
+
 comp_guess = randint(1,100)
+
 print('Select mode : ')
 print(f'1 - Easy\n2 - Medium\n3 - Hard')
 tries_allowed = mode[int(input('Your choice of Mode : '))]
+
 print('Start a guessing')
 no_of_guess = 0
 while no_of_guess < tries_allowed:
